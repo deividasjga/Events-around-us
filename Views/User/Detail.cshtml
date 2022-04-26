@@ -1,0 +1,33 @@
+﻿@using RenginiaiWebApp.ViewModels
+@model UserDetailViewModel
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">About
+      <small>@Model.UserName</small>
+    </h1>
+  
+    <!-- Portfolio Item Row -->
+    <div class="row">
+  
+      <div class="col-md-8">
+        @*<img class="img-fluid" src="@Model.Image" alt="">*@
+      </div>
+  
+      <div class="col-md-4">
+        <h3 class="my-3">@Model.BB</h3>
+        <p>@Model.AA</p>
+        <h3 class="my-3">Location</h3>
+        <ul>
+@*        <li>@Model.Address.City</li>
+          <li>@Model.ClubCategory</li>*@
+        </ul>
+      </div>
+  
+    </div>
+    <!-- /.row -->
+  
+  </div>
+  <!-- /.container -->

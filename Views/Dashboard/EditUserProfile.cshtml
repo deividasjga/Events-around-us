@@ -1,0 +1,28 @@
+﻿@using RenginiaiWebApp.ViewModels
+@model EditUserDashboardViewModel
+
+
+<form method="post" asp-action="EditUserProfile" enctype="multipart/form-data">
+    <input type="hidden" id="Id" name="Id" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="AA">AA</label>
+        <input asp-for="AA" class="form-control" placeholder="AA">
+        <span asp-validation-for="AA" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BB">BB</label>
+        <input asp-for="BB" class="form-control" placeholder="BB">
+        <span asp-validation-for="BB" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="City">City</label>
+        <input asp-for="City" class="form-control" placeholder="City">
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Image">Profile Image</label>
+        <input asp-for="Image" type="file" class="form-control" placeholder="Image">
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

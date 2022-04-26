@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <h1>Welcome, please sign in</h1>
+                        }
+
+                        @if (User.Identity.IsAuthenticated){
+                            <h1>
+                            <p style="text-align:center;color:white">
+                            This is a home page of Events around us!
+                            </p>
+                            </h1>
+
+                          // <img src="https://images.unsplash.com/photo-1599739291060-4578e77dac5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Sample Photo" />
+                        
+                          <style>
+body {
+  background-image: url('https://images.unsplash.com/photo-1599739291060-4578e77dac5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+}
+</style>
+                        
+                        }
